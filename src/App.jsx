@@ -1,26 +1,26 @@
 import './App.css'
-import { useState } from 'react';
-
-function calculation() {
-  const number = document.getElementById("#number").value;
-  console.log(number);
-
-}
+import React, { useState } from 'react';
 
 export default function App() {
+  let sum = 0;
+  const [numberOne, setNumberOne] = useState(0);
+  const [numberTwo, setNumberTwo] = useState(0);
+
+  function calculation() {
+
+  }
+
   return (
     <>
       <h1>Simple Addition</h1>
-      <input id="number" type="number"/>
+      <input id="numberOne" type="number" />
       &nbsp;
-      <input id="addedNumber" type="number"/>
+      <input id="numberTwo" type="number" />
       <p>
-        The sum of these two numbers is: <span id="sum">0</span>
+        The sum of these two numbers is:
       </p>
-
 
     </>
   );
 }
-
 
