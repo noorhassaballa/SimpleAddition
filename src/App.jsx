@@ -10,7 +10,6 @@ export default function App() {
 
   function calculation() {
     sum = {oneAsNumber} + {twoAsNumber};
-    return sum;
   }
 
   return (
@@ -20,7 +19,7 @@ export default function App() {
       &nbsp;
       <input id="numberTwo" type="number" value={numberTwo} onChange={e => setNumberTwo(e.target.value)}/>
       <p>
-        The sum of these two numbers is:<span></span>
+        The sum of these two numbers is: <span>{sum}</span>
       </p>
 
     </>
