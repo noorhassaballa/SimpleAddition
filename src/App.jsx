@@ -5,12 +5,14 @@ export default function App() {
   let sum = 0;
   const [numberOne, setNumberOne] = useState('');
   const [numberTwo, setNumberTwo] = useState('');
-  const oneAsNumber = Number.parseInt(numberOne);
-  const twoAsNumber = Number.parseInt(numberTwo);
+  const oneAsNumber = Number.parseInt(setNumberOne);
+  const twoAsNumber = Number.parseInt(setNumberTwo);
 
   function calculation() {
-    sum = {oneAsNumber} + {twoAsNumber};
+    sum = oneAsNumber + twoAsNumber;
   }
+
+  calculation();
 
   return (
     <>
