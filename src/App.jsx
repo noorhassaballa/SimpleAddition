@@ -2,7 +2,7 @@ import './App.css'
 import React, { useState } from 'react';
 
 export default function App() {
-  let [sum, setSum] = useState(0);
+  let [sum] = useState(0);
   const [numberOne, setNumberOne] = useState(0);
   const [numberTwo, setNumberTwo] = useState(0);
 
